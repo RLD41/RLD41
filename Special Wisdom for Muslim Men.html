@@ -26,9 +26,28 @@ body {
 
 .wrapper {
   position: relative;
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(90deg);
+  width: 100vh;       /* tinggi layar jadi lebar karena diputar */
+  height: 100vw;      /* lebar layar jadi tinggi */
+  transform: rotate(90deg);  /* Putar semua konten */
   display: flex;
   align-items: center;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 12s linear infinite;
+  color: white;
+  font-size: 25vw;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
