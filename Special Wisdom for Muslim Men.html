@@ -1,4 +1,4 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -11,7 +11,9 @@
     <div class="marquee">LU KALO N60C*K LU DAPAT DOSA KARNA LU MEMBUANG BUANG ANAK MU 🗿</div>
   </div>
 </body>
-</html><style>body {
+  </html>
+
+body {
   margin: 0;
   background: black;
   overflow: hidden;
@@ -24,28 +26,9 @@
 
 .wrapper {
   position: relative;
-  width: 100vh;       /* tinggi layar jadi lebar karena diputar */
-  height: 100vw;      /* lebar layar jadi tinggi */
-  transform: rotate(90deg);  /* Putar semua konten */
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(90deg);
   display: flex;
   align-items: center;
 }
-
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll 12s linear infinite;
-  color: white;
-  font-size: 25vw;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}</style>
