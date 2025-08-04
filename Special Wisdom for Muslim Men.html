@@ -1,0 +1,51 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halo World Landscape</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="marquee">LU KALO N60C*K LU DAPAT DOSA KARNA LU MEMBUANG BUANG ANAK MU 🗿</div>
+  </div>
+</body>
+</html><style>body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 100vh;       /* tinggi layar jadi lebar karena diputar */
+  height: 100vw;      /* lebar layar jadi tinggi */
+  transform: rotate(90deg);  /* Putar semua konten */
+  display: flex;
+  align-items: center;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 12s linear infinite;
+  color: white;
+  font-size: 25vw;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}</style>
